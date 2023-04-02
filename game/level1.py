@@ -1,6 +1,6 @@
 import pygame
 SIZE = (896, 1040)
-background = pygame.image.load("./assets/background.png")
+background = pygame.image.load("./game/assets/background.png")
 
 ground = []
 

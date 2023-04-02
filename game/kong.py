@@ -1,9 +1,9 @@
 import pygame
-import barrel
+from game import barrel
 
-animation = [pygame.image.load("./assets/kong1.png"), pygame.image.load("./assets/kong2.png"),
-             pygame.image.load("./assets/kong3.png"), pygame.image.load("./assets/kong4.png"),
-             pygame.image.load("./assets/kong5.png")]
+animation = [pygame.image.load("./game/assets/kong1.png"), pygame.image.load("./game/assets/kong2.png"),
+             pygame.image.load("./game/assets/kong3.png"), pygame.image.load("./game/assets/kong4.png"),
+             pygame.image.load("./game/assets/kong5.png")]
 
 barrels = []
 

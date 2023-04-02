@@ -1,7 +1,7 @@
 import pygame
-import level1
-import barrel
-import target
+from game import level1
+from game import barrel
+from game import target
 
 ground = level1.ground
 ladders = level1.ladders
@@ -10,19 +10,19 @@ barrels = barrel.barrels
 
 target1 = target.target
 
-animation_right = [pygame.image.load("./assets/player/right/normal.png"), pygame.image.load("./assets/player/right/walking1.png"),
-                   pygame.image.load("./assets/player/right/walking2.png"), pygame.image.load("./assets/player/right/normal_hammer_up.png"),
-                   pygame.image.load("./assets/player/right/normal_hammer_down.png"), pygame.image.load("./assets/player/right/walking_hammer_up.png"),
-                   pygame.image.load("./assets/player/right/walking_hammer_down.png")]
+animation_right = [pygame.image.load("./game/assets/player/right/normal.png"), pygame.image.load("./game/assets/player/right/walking1.png"),
+                   pygame.image.load("./game/assets/player/right/walking2.png"), pygame.image.load("./game/assets/player/right/normal_hammer_up.png"),
+                   pygame.image.load("./game/assets/player/right/normal_hammer_down.png"), pygame.image.load("./game/assets/player/right/walking_hammer_up.png"),
+                   pygame.image.load("./game/assets/player/right/walking_hammer_down.png")]
 
-animation_left = [pygame.image.load("./assets/player/left/normal.png"), pygame.image.load("./assets/player/left/walking1.png"),
-                   pygame.image.load("./assets/player/left/walking2.png"), pygame.image.load("./assets/player/left/normal_hammer_up.png"),
-                   pygame.image.load("./assets/player/left/normal_hammer_down.png"), pygame.image.load("./assets/player/left/walking_hammer_up.png"),
-                   pygame.image.load("./assets/player/left/walking_hammer_down.png")]
+animation_left = [pygame.image.load("./game/assets/player/left/normal.png"), pygame.image.load("./game/assets/player/left/walking1.png"),
+                   pygame.image.load("./game/assets/player/left/walking2.png"), pygame.image.load("./game/assets/player/left/normal_hammer_up.png"),
+                   pygame.image.load("./game/assets/player/left/normal_hammer_down.png"), pygame.image.load("./game/assets/player/left/walking_hammer_up.png"),
+                   pygame.image.load("./game/assets/player/left/walking_hammer_down.png")]
 
-animation_climbing = [pygame.image.load("./assets/player/climbing/right.png"), pygame.image.load("./assets/player/climbing/left.png")]
+animation_climbing = [pygame.image.load("./game/assets/player/climbing/right.png"), pygame.image.load("./game/assets/player/climbing/left.png")]
 
-dead = pygame.image.load("./assets/player/dead.png")
+dead = pygame.image.load("./game/assets/player/dead.png")
 
 animations = [animation_right, animation_left, animation_climbing, dead]
 

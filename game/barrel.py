@@ -1,17 +1,17 @@
 import pygame
 import random
-import level1
+from game import level1
 
 barrels = []
 
 endpoint = pygame.Rect(60, 888, 64, 120)
 
-animation = [pygame.image.load("./assets/Barrel1.png"), pygame.image.load("./assets/Barrel2.png"), 
-             pygame.image.load("./assets/Barrel3.png"), pygame.image.load("./assets/Barrel4.png"),
-             pygame.image.load("./assets/Barrel5.png")]
+animation = [pygame.image.load("./game/assets/Barrel1.png"), pygame.image.load("./game/assets/Barrel2.png"), 
+             pygame.image.load("./game/assets/Barrel3.png"), pygame.image.load("./game/assets/Barrel4.png"),
+             pygame.image.load("./game/assets/Barrel5.png")]
 
-explosion = [pygame.image.load("./assets/explosion1.png"), pygame.image.load("./assets/explosion2.png"),
-             pygame.image.load("./assets/explosion3.png"), pygame.image.load("./assets/explosion4.png")]
+explosion = [pygame.image.load("./game/assets/explosion1.png"), pygame.image.load("./game/assets/explosion2.png"),
+             pygame.image.load("./game/assets/explosion3.png"), pygame.image.load("./game/assets/explosion4.png")]
 
 class Barrel:
     def __init__(self, x, y, dx, dy, gravity, colour, width = 48, height = 40):

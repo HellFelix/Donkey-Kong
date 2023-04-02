@@ -2,8 +2,8 @@ import pygame
 
 class Target:
     def __init__(self, x, y):
-        self.animation = [pygame.image.load("./assets/target1.png"), pygame.image.load("./assets/target2.png"),
-                          pygame.image.load("./assets/target3.png")]
+        self.animation = [pygame.image.load("./game/assets/target1.png"), pygame.image.load("./game/assets/target2.png"),
+                          pygame.image.load("./game/assets/target3.png")]
         self.image = self.animation[0]
         self.x = x
         self.y = y
